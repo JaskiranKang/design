@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    
+    <title>Enterprise Design Principles - DfE Design</title>
+    
+
+    <!--[if gt IE 8]><!--><link href="/stylesheets/screen.css" media="screen" rel="stylesheet" ><!--<![endif]-->
+    <!--[if lte IE 8]><link href="/stylesheets/screen-old-ie.css" media="screen" rel="stylesheet" ><![endif]-->
+
+    <link rel="canonical" href="http://localhost:4000/architecture-old-folders/principles/enterprise-architecture-principles/">
+
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" >
+    <script src="/javascripts/application.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="skip-link">Skip to main content</a>
+
+        <header class="header header--full-width">
+  <div class="header__container">
+    <div class="header__brand">
+        <a href="/">
+        
+        <span class="header__title">
+          DfE Design
+          
+        </span>
+        </a>
+    </div>
+
+    
+      <div data-module="navigation">
+        <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">Menu</button>
+
+        <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true">
+          <ul>
+            
+              <li>
+                <a href="https://github.com/DFE-Digital/Design">
+                  GitHub
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    
+  </div>
+</header>
+
+      </div>
+
+      <div id="toc-heading" class="toc-show fixedsticky">
+        <a href="#toc" class="toc-show__label js-toc-show" aria-controls="toc">
+          Table of contents <span class="toc-show__icon"></span>
+        </a>
+      </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+        <div class="app-pane__toc">
+          <div class="toc" data-module="table-of-contents">
+            <a href="#" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></a>
+            <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading">
+              
+
+<ul>
+  <li><a href="#enterprise-design-principles">Enterprise Design Principles</a>
+    <ul>
+      <li><a href="#1-re-use-services-and-components">1. Re-use services and components</a></li>
+      <li><a href="#2-align-technology-choices-with-cross-government-strategy">2. Align technology choices with cross-Government strategy</a></li>
+      <li><a href="#3-link-technology-decisions-to-dfe-goals">3. Link technology decisions to DfE goals</a></li>
+      <li><a href="#4-evaluate-total-cost-of-ownership">4. Evaluate Total Cost of Ownership</a></li>
+      <li><a href="#5-data-is-a-shared-asset">5. Data is a shared asset</a></li>
+      <li><a href="#6-design-for-accessibility">6. Design for accessibility</a></li>
+      <li><a href="#7-deliver-a-secure-service">7. Deliver a secure service</a></li>
+      <li><a href="#8-deliver-cloud-native-solutions">8. Deliver cloud-native solutions</a></li>
+      <li><a href="#9-design-for-interoperability">9. Design for interoperability</a></li>
+      <li><a href="#10-use-open-standards">10. Use open standards</a></li>
+      <li><a href="#11-design-for-portability">11. Design for portability</a></li>
+      <li><a href="#12-design-loosely-coupled-solutions">12. Design loosely coupled solutions</a></li>
+      <li><a href="#13-minimise-technical-debt">13. Minimise technical debt</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+            </nav>
+          </div>
+        </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+            <h1 id="enterprise-design-principles">Enterprise Design Principles</h1>
+
+<p>Principles are general rules and guidelines, intended to be enduring and seldom amended, that inform and support the way in which the DfE fulfils its vision and principles. They reflect a level of consensus across the enterprise and embody the spirit and thinking of the enterprise Design.</p>
+
+<p>Requirements gathering provide user needs and wants, principles provide the guidance to meet those needs.</p>
+
+<p>Throughout these principles, we refer to specific points of the UK Government <a href="https://www.gov.uk/service-manual/service-standard">Service Standard</a> and <a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice">Technology Code of Practice</a>, that underpin use of these principles.</p>
+
+<h2 id="1-re-use-services-and-components">1. Re-use services and components</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>Duplication of services or components adds cost and complexity.</p>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>When re-using components and services, projects are likely to need to assemble several components / products to meet end-to-end requirements and not just look for single solutions</li>
+  <li>Where no approved service or component exists, any new service or component should be designed to maximise re-usability</li>
+  <li>Services or components should be delivered at the smallest possible granularity to facilitate re-use</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#share-reuse-and-collaborate">TCoP8</a>: Share, reuse and collaborate</li>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-2-solve-a-whole-problem">SS2</a>: Solve a whole problem for users.</li>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-13-use-common-standards-components-patterns">SS13</a>: Use and contribute to open standards, common components and patterns</li>
+</ul>
+
+<h2 id="2-align-technology-choices-with-cross-government-strategy">2. Align technology choices with cross-Government strategy</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>Components and services should be aligned with government strategies to increase reusability, minimise cost and improve consistency of user experience across government services. Cross government components include Gov.UK Notify, Gov.UK Verify, Gov.UK Pay - read more about <a href="https://gds.blog.gov.uk/category/government-as-a-platform/">Government as a Platform</a> on the GDS blog.</p>
+
+<p><strong>How?</strong></p>
+
+<p>Projects delivering new products or services should assess alignment with cross government strategies and deliver re-useable components and services which can be used at cross-government level</p>
+
+<p><strong>Relates to</strong></p>
+
+<p><a href="https://www.gov.uk/service-manual/service-standard/point-3-join-up-across-channels">SS3</a>: Provide a joined up experience across all channels</p>
+
+<h2 id="3-link-technology-decisions-to-dfe-goals">3. Link technology decisions to DfE goals</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>Technology investment should only be made where it demonstrably contributes to DfE goals or drivers</p>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>All projects should have a business case with measurable business outcomes aligned to DfE Goals and drivers.</li>
+  <li>All projects should assign a person accountable for measurement, reporting and realisation of stated business benefits</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data">SS10</a>: Define what success looks like and publish performance data</li>
+</ul>
+
+<h2 id="4-evaluate-total-cost-of-ownership">4. Evaluate Total Cost of Ownership</h2>
+
+<p><strong>Why?</strong></p>
+
+<ul>
+  <li>Expenditure of public money should always look to deliver the best value for the taxpayer</li>
+  <li>Ongoing support and maintenance of solutions form a major part of the total costs and therefore should inform technology decisions</li>
+</ul>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>All projects above the agreed set threshold, must be supported by an evidenced business case, ensuring that overall solution costs have been considered for value for money.</li>
+  <li>For all projects an Design Lead must asses the total cost of ownership and challenge where appropriate</li>
+  <li>Where duplicate service or component is proposed TCO should include costs of running both/all duplicated services</li>
+  <li>Investment must justified by supporting evidence.</li>
+  <li>Design must consider long term costs and support of any solution delivered</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data">SS10</a>: Define what success looks like and publish performance data</li>
+</ul>
+
+<h2 id="5-data-is-a-shared-asset">5. Data is a shared asset</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>We are striving to be a data-driven department: data is the golden thread that supports seamless, user-centric user journeys.  Data enables evidence based decisions to be made, supports management and governance of our business activities, is used to hold us to account for delivery and allows us to assess the effectiveness of our Departmental policies.</p>
+
+<p>Read more about our <a href="/enterprise-data-Design-principles">Enterprise Data Architecure principles</a></p>
+
+<p><strong>How?</strong></p>
+
+<ul>
+  <li>Data must be sharable – solutions should adhere to Departmental Data Standards, working with DfE Data Governance team to extend those standards if necessary.</li>
+  <li>Data must be shared – services should provide methods of sharing data with other services to support other user journeys, and with the Enterprise Data &amp; Analysis Platform to support reporting, analysis and Data Science.</li>
+  <li>Data must be protected – services must take care during both development and operational phases to adequately secure live data, including but not limited to data containing Personally Identifiable Information. Design must follow the Departmental Data Protection policies held by the DfE Data Governance team to ensure they are protecting our shared assets appropriately.</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#make-better-use-of-data">TCoP10</a>: Make better use of data</li>
+</ul>
+
+<h2 id="6-design-for-accessibility">6. Design for accessibility</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>We must ensure there is an equal playing field for all users.
+Systems must adhere to current government accessibility regulations.</p>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>Seek input from Accessibility Advisers on how designs might need amending to improve accessibility</li>
+  <li>Include accessibility testing as part of any project delivery</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#make-things-accessible-and-inclusive">TCoP2</a>: Make things accessible and inclusive</li>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-4-make-the-service-simple-to-use">SS4</a>: Make things easy to use</li>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-5-make-sure-everyone-can-use-the-service">SS5</a>: Make sure everyone can use the service</li>
+</ul>
+
+<h2 id="7-deliver-a-secure-service">7. Deliver a secure service</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>The department’s information assets must be protected to ensure that they are not inadvertently exposed to an unintended audience.</p>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>Early engagement with the Chief Information Security Officer (CISO) division will ensure that risk assessments are completed and appropriate security controls are designed into solutions before development has begun</li>
+  <li>Security controls must be proportionate to ensure that it is still possible for authorised users to access and share data seamlessly</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#make-things-secure">TCoP6</a>: Make things secure</li>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-9-create-a-secure-service">SS9</a>: Create a secure service which protects users’ privacy</li>
+</ul>
+
+<h2 id="8-deliver-cloud-native-solutions">8. Deliver cloud-native solutions</h2>
+
+<p><strong>Why?</strong></p>
+
+<ul>
+  <li>The scale of public cloud services enables the delivery of highly scalable, cost effective, secure services. Consumption based billing and rapid provisioning supports the Government ICT strategy.</li>
+  <li>A service can be configured and built using a SaaS product, without bespoke customisation and vendor lock in</li>
+</ul>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>Choose Software as a Service (SaaS), before Platform as a Service (PaaS), before Infrastructure as a Service (IaaS)</li>
+  <li>Check hosting arrangements and data sensitivity when selecting cloud solutions</li>
+  <li>Design exit strategy before entering cloud agreements</li>
+  <li>Design solutions to take advantage of cloud features, such as elastic scaling, automated spin-down</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<p><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#use-cloud-first">TCoP5</a>: Use cloud first</p>
+
+<h2 id="9-design-for-interoperability">9. Design for interoperability</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>Interoperability enables sharing of capabilities and data between systems</p>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>Service Oriented and microservice Designs maximise interoperability and re-use</li>
+  <li>Interfaces should be discoverable and self-describing  or documented</li>
+  <li>Interoperability can affect the demands on solutions, therefore designs may need to be scalable to cope with other usage</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#integrate-and-adapt-technology">TCoP9</a>: Integrate and adapt technology</li>
+</ul>
+
+<h2 id="10-use-open-standards">10. Use open standards</h2>
+
+<p><strong>Why?</strong></p>
+
+<ul>
+  <li>Avoidance of vendor lock-in</li>
+  <li>Lays the foundation for delivering interoperability</li>
+  <li>Open standards facilitate interoperability and data exchange among different products or services.</li>
+</ul>
+
+<p><strong>How?</strong></p>
+
+<p>Where open standards  do not exist, create one or find the best fit with least lock in</p>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#make-use-of-open-standards">TCoP4</a>: Make use of open standards</li>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-13-use-common-standards-components-patterns">SS13</a>: Use and contribute to open standards, common components and patterns</li>
+</ul>
+
+<h2 id="11-design-for-portability">11. Design for portability</h2>
+
+<p><strong>Why?</strong></p>
+
+<ul>
+  <li>Avoidance of vendor lock-in</li>
+  <li>Moving to a new platform is simpler and requires less engineering</li>
+</ul>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>Design must be platform agnostic</li>
+  <li>Minimise use platform specific features</li>
+  <li>Will require an exit strategy</li>
+</ul>
+
+<h2 id="12-design-loosely-coupled-solutions">12. Design loosely coupled solutions</h2>
+
+<p><strong>Why?</strong></p>
+
+<ul>
+  <li>Loosely coupled components can be replaced with alternative implementations that provide the same services.</li>
+  <li>Components in a loosely coupled system are less constrained to the same platform, language, operating system, or build environment.</li>
+</ul>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>Projects must ensure any additional coordination protocols needed are in place</li>
+  <li>Projects must ensure consistent data synchronisation with DfE Data guidance</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#integrate-and-adapt-technology">TCoP9</a>: Integrate and adapt technology</li>
+</ul>
+
+<h2 id="13-minimise-technical-debt">13. Minimise technical debt</h2>
+
+<p><strong>Why?</strong></p>
+
+<p>Replacing or superseding a component or service without removing existing components or services increases technical debt</p>
+
+<p><strong>How?</strong></p>
+<ul>
+  <li>Any project delivering a technology component or service designed to supersede or replace an existing component or service must remove the existing service as part of that project</li>
+  <li>Project budgets need to include cost of decommissioning existing solutions or include total cost  of both systems in the business case.</li>
+</ul>
+
+<p><strong>Relates to</strong></p>
+
+<ul>
+  <li><a href="https://www.gov.uk/service-manual/service-standard/point-2-solve-a-whole-problem">SS2</a>: Solve the whole problem for a users</li>
+</ul>
+
+          </main>
+
+          <footer class="footer">
+  <div class="footer__licence">
+    
+    <ul>
+      
+        <li>
+          <a href="https://dfe-digital.github.io/Design/accessibility">
+            Accessibility
+          </a>
+        </li>
+      
+    </ul>
+  
+    <a class="footer__licence-logo" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a>
+    <p class="footer__licence-description">All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+  </div>
+
+  <div class="footer__copyright">
+    <a class="footer__copyright-logo" href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
