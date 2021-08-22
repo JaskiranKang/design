@@ -16,7 +16,7 @@ You can fork the repo to your personal github account, or download it to you mac
 - Check if you have Ruby installed in your machine by running the following command on to a terminal:
 
 ```
-ruby-v
+ruby -v
 ```
 
 You will need a minimum version of 2.6.3p62 to run this with no errors, if by default you have a Ruby vesrion lower than this, you can use a Ruby version manager such as [rvm](http://rvm.io/)
