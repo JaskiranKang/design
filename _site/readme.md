@@ -7,35 +7,42 @@ It complements the [GDS Service Manual](https://www.gov.uk/service-manual) and i
 [design section](https://www.gov.uk/service-manual/design),
 which covers service design more broadly.
 
-## Adding new guidance
+## Before you start
 
-Create a new Markdown (.md) file in the [DfE Design repo](https://github.com/DFE-Digital/enterprise-Design) that follows this pattern, add a link to it
-from this page, and make a pull request:
+You can fork the repo to your personal github account, or download it to you machine. Once the code is in the right folder you have to check whether you have several dependencies.
 
-```markdown
----
-category: The broader area this fits into
-expires: yyyy-mm-dd (6 months from now)
----
-# What you're writing about
+## Dependencies
 
-Introduction of a couple of paragraphs to explain why what you're
-writing about is important. The [title should probably be a verb, not a
-noun](https://designnotes.blog.gov.uk/2015/06/22/good-services-are-verbs-2/) (e.g. "Storing source code", not "Code
-repositories").
+- Check if you have Ruby installed in your machine by running the following command on to a terminal:
 
-## User needs
-
-Why do we do this? Who is it helping?
-
-## Principles
-
-What broad approaches do we follow when we do this?
-
-## Tools
-
-What specific software (commercial or open source) do we use to help us do this?
+```
+ruby-v
 ```
 
-The service manual has some useful information on
-[learning about and writing user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs).
+You will need a minimum version of 2.6.3p62 to run this with no errors, if by default you have a Ruby vesrion lower than this, you can use a Ruby version manager such as [rvm](http://rvm.io/)
+
+- Check if you have bundler by running the following command on to a terminal:
+
+```
+bundler -v
+```
+
+You will need the latest version that at the time of this being written is 2.2.24, if you don't have Bundler installed the terminal should prompt you to install one, via [homebrew](https://brew.sh/) 
+
+##  Install locally
+
+Once all the above have downloaded or are already on your machine simply run the following commands:
+
+```
+bundle install
+```
+
+When that process is finished run:
+
+```
+bundle exec jekyll serve
+```
+
+This should build a _site subfolder onto you project and serve the site locally at: [LocalHost](http://127.0.0.1:4000/) for you to make changes before pushing to the repo.
+
+For contributing to this project please read the [contribude.md](/contribute.md) 

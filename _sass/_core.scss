@@ -31,7 +31,8 @@ $desktop-breakpoint: 992px !default;
 
 @import "accessibility";
 
-html, body {
+html,
+body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,7 +40,22 @@ html, body {
 }
 
 // basic styles for HTML5 and other elements
-html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -59,4 +75,12 @@ a:hover {
 
 a:active {
   color: $link-active-colour;
+}
+
+.header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }

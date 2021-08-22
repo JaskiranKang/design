@@ -8,13 +8,13 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     
-    <title>Our Profession Offer - DfE Design</title>
+    <title>Build locally - DfE Design</title>
     
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/screen.css" media="screen" rel="stylesheet" ><!--<![endif]-->
     <!--[if lte IE 8]><link href="/stylesheets/screen-old-ie.css" media="screen" rel="stylesheet" ><![endif]-->
 
-    <link rel="canonical" href="http://localhost:4000/architecture-old-folders/profession/our-profession-offer/">
+    <link rel="canonical" href="http://localhost:4000/howtos/build/">
 
     <link href="/stylesheets/print.css" media="print" rel="stylesheet" >
     <script src="/javascripts/application.js" type="text/javascript" charset="utf-8"></script>
@@ -25,7 +25,7 @@
       <div class="app-pane__header toc-open-disabled">
         <a href="#content" class="skip-link">Skip to main content</a>
 
-        <header class="header header--full-width">
+        <header class="header header--full-width header-backround">
   <div class="header__container">
     <div class="header__brand">
         <a href="/">
@@ -73,11 +73,11 @@
               
 
 <ul>
-  <li><a href="#our-profession-offer">Our Profession Offer</a>
+  <li><a href="#build-locally">Build locally</a>
     <ul>
-      <li><a href="#design-leads">Design Leads</a></li>
-      <li><a href="#help-to-find-an-designer">Help to find an Designer</a></li>
-      <li><a href="#further-guidance">Further guidance</a></li>
+      <li><a href="#before-you-start">Before you start</a></li>
+      <li><a href="#dependencies">Dependencies</a></li>
+      <li><a href="#install-locally">Install locally</a></li>
     </ul>
   </li>
 </ul>
@@ -89,61 +89,54 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="our-profession-offer">Our Profession Offer</h1>
+            <h1 id="build-locally">Build locally</h1>
+<p>This site documents the Design principles, standards and guidance that we expect teams working
+within the <a href="https://www.gov.uk/government/organisations/department-for-education">Department for Education (DfE)</a>
+to follow when designing services.</p>
 
-<blockquote>
-  <p>DfE Design is moving to a more profession-led model. This content is under review. Contact the <a href="mailto:Design.profession@education.gov.uk">Design profession</a> for more information.</p>
-</blockquote>
+<p>It complements the <a href="https://www.gov.uk/service-manual">GDS Service Manual</a> and its
+<a href="https://www.gov.uk/service-manual/design">design section</a>,
+which covers service design more broadly.</p>
 
-<p>The Design profession can help you find or access the right type of Design support for your project.
-We have access to a large community of permanent and contract Design across the Department, plus commercial frameworks to help fulfill your needs.</p>
+<h2 id="before-you-start">Before you start</h2>
 
-<p>In the first instance, you should discuss your needs with your Design Lead.</p>
+<p>You can fork the repo to your personal github account, or download it to you machine. Once the code is in the right folder you have to check whether you have several dependencies.</p>
 
-<h2 id="design-leads">Design Leads</h2>
-
-<p>Design Leads work within a DfE group or portfolio of work (e.g. ESFA, EYSG or SCMD). They work closely with DDaT business partners and other DDaT specialists to support, signpost and help join-up delivery.</p>
-
-<p>They:</p>
+<h2 id="dependencies">Dependencies</h2>
 
 <ul>
-  <li>assist, advise and guide programmes and projects, ensuring alignment with:
-    <ul>
-      <li>technical strategies, including reuse of common components, patterns and standards</li>
-      <li>Design principles</li>
-      <li>Design governance and design assurance</li>
-    </ul>
-  </li>
-  <li>should be engaged from idea conception and throughout delivery</li>
-  <li>can help identify Design and resources needed to support delivery:
-    <ul>
-      <li>guiding idea formation and supporting recruitment of the right Design to meet those needs  </li>
-      <li>working with a service delivery team to align with Design principles and governance,</li>
-      <li>helping identify commonality across the enterprise and finding the right solutions</li>
-    </ul>
-  </li>
+  <li>Check if you have Ruby installed in your machine by running the following command on to a terminal:</li>
 </ul>
 
-<p>To find out who your Design Lead is, contact the <a href="mailto:Design.profession@education.gov.uk">Design profession</a></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-v
+</code></pre></div></div>
 
-<h2 id="help-to-find-an-designer">Help to find an Designer</h2>
+<p>You will need a minimum version of 2.6.3p62 to run this with no errors, if by default you have a Ruby vesrion lower than this, you can use a Ruby version manager such as <a href="http://rvm.io/">rvm</a></p>
 
-<p>The Design profession will work with you and your Design Lead to fulfill your needs. That could be assigning an Designer from our team to your project or helping you bring in the right people or services, through one of our compliant commercial routes to market. This will enable you to:</p>
 <ul>
-  <li>get the right Design skills, at the right time, at the right price</li>
-  <li>on-board Design into DfE properly, so they understand our ways of working and our governance framework</li>
-  <li>provide oversight and assurance of their outputs and deliverables</li>
-  <li>link them into the wider DfE Design profession and community</li>
-  <li>exit them professionally when their work is complete, with appropriate handover and knowledge transfer</li>
+  <li>Check if you have bundler by running the following command on to a terminal:</li>
 </ul>
 
-<p>If you’d like to know more, contact the <a href="mailto:Design.profession@education.gov.uk">Design profession</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundler -v
+</code></pre></div></div>
 
-<h2 id="further-guidance">Further guidance</h2>
+<p>You will need the latest version that at the time of this being written is 2.2.24, if you don’t have Bundler installed the terminal should prompt you to install one, via <a href="https://brew.sh/">homebrew</a></p>
 
-<p>More information on Design roles and responsibilities is available on our <a href="../../capability/Design-capability-framework/">Design Capability Framework</a> guidance.</p>
+<h2 id="install-locally">Install locally</h2>
 
-<p>For any other information on the Design practice, contact the <a href="mailto:Design.profession@education.gov.uk">Design profession</a></p>
+<p>Once all the above have downloaded or are already on your machine simply run the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+</code></pre></div></div>
+
+<p>When that process is finished run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+
+<p>This should build a _site subfolder onto you project and serve the site locally at: <a href="http://127.0.0.1:4000/">LocalHost</a> for you to make changes before pushing to the repo.</p>
+
+<p>For contributing to this project please read the <a href="/howtos/contribute/">contribude.md</a></p>
 
           </main>
 

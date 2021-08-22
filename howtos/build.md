@@ -1,4 +1,10 @@
-# DfE Design
+---
+category: Build
+expires: 2020-12-01
+author: Nikolaos Gkionis
+---
+
+# Build locally
 This site documents the Design principles, standards and guidance that we expect teams working
 within the [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education)
 to follow when designing services.

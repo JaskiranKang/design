@@ -276,6 +276,8 @@ a:hover { color: #2b8cc4; }
 
 a:active { color: #2b8cc4; }
 
+.header { background: #020024; background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); padding-top: 10px; padding-bottom: 10px; font-weight: bold; }
+
 .fixedsticky { position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; position: sticky; }
 
 /* When position: sticky is supported but native behavior is ignored */

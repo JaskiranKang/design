@@ -49,4 +49,9 @@ defaults:
       path: "crits"
     values:
       crits: true
+  -
+    scope:
+      path: "howtos"
+    values:
+      howtos: true
   

@@ -8,13 +8,13 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     
-    <title>Technical requirements for procurement - DfE Design</title>
+    <title>Contribute - DfE Design</title>
     
 
     <!--[if gt IE 8]><!--><link href="/stylesheets/screen.css" media="screen" rel="stylesheet" ><!--<![endif]-->
     <!--[if lte IE 8]><link href="/stylesheets/screen-old-ie.css" media="screen" rel="stylesheet" ><![endif]-->
 
-    <link rel="canonical" href="http://localhost:4000/architecture-old-folders/patterns/requirement-patterns/">
+    <link rel="canonical" href="http://localhost:4000/contribute/">
 
     <link href="/stylesheets/print.css" media="print" rel="stylesheet" >
     <script src="/javascripts/application.js" type="text/javascript" charset="utf-8"></script>
@@ -25,7 +25,7 @@
       <div class="app-pane__header toc-open-disabled">
         <a href="#content" class="skip-link">Skip to main content</a>
 
-        <header class="header header--full-width">
+        <header class="header header--full-width header-backround">
   <div class="header__container">
     <div class="header__brand">
         <a href="/">
@@ -73,10 +73,9 @@
               
 
 <ul>
-  <li><a href="#technical-requirements-for-procurement">Technical requirements for procurement</a>
+  <li><a href="#contribute">Contribute</a>
     <ul>
-      <li><a href="#non-functional-requirements-nfrs">Non-functional requirements (NFRs)</a></li>
-      <li><a href="#invitation-to-tender-itt-specification">Invitation to Tender (ITT) specification</a></li>
+      <li><a href="#adding-new-guidance">Adding new guidance</a></li>
     </ul>
   </li>
 </ul>
@@ -88,24 +87,39 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="technical-requirements-for-procurement">Technical requirements for procurement</h1>
+            <h1 id="contribute">Contribute</h1>
 
-<h2 id="non-functional-requirements-nfrs">Non-functional requirements (NFRs)</h2>
+<h2 id="adding-new-guidance">Adding new guidance</h2>
 
-<ul>
-  <li>
-    <p><a href="https://educationgovuk.sharepoint.com/:w:/r/sites/gp/WorkplaceDocuments/Reference%20Design/Patterns/DFE%20Reference%20NFRs.docx?d=wad9f0663140a442ebd404c7837b6ce0f&amp;csf=1&amp;e=qh9Wjr">Reference NFRs in SharePoint repo</a></p>
-  </li>
-  <li>
-    <p><a href="https://educationgovuk.sharepoint.com/:x:/r/sites/gp/WorkplaceDocuments/Reference%20Design/Patterns/Example%20NFRs%20-%20National%20Careers%20Service.xlsx?d=w988b58c4d30846a3a4f4ed66f8e13241&amp;csf=1&amp;e=QvfBiT">Simple example NFRs in SharePoint repo</a></p>
-  </li>
-</ul>
+<p>Create a new Markdown (.md) file in the <a href="https://github.com/DFE-Digital/Design">DfE Design repo</a> that follows this pattern, add a link to it
+from this page, and make a pull request:</p>
 
-<h2 id="invitation-to-tender-itt-specification">Invitation to Tender (ITT) specification</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">category</span><span class="pi">:</span> <span class="s">The broader area this fits into</span>
+<span class="na">expires</span><span class="pi">:</span> <span class="s">yyyy-mm-dd (6 months from now)</span>
+<span class="nn">---</span>
+<span class="gh"># What you're writing about</span>
 
-<ul>
-  <li><a href="https://educationgovuk.sharepoint.com/:w:/r/sites/gp/WorkplaceDocuments/Reference%20Design/Patterns/EXAMPLE%20ITT%20Technical%20Specification.doc?d=w738a9f5489644520b7dfaeb9410bc60b&amp;csf=1&amp;e=8gLncV">Example ITT in SharePoint repo</a></li>
-</ul>
+Introduction of a couple of paragraphs to explain why what you're
+writing about is important. The <span class="p">[</span><span class="nv">title should probably be a verb, not a
+noun</span><span class="p">](</span><span class="sx">https://designnotes.blog.gov.uk/2015/06/22/good-services-are-verbs-2/</span><span class="p">)</span> <span class="p">(</span><span class="sx">e.g.</span> <span class="nn">"Storing source code"</span>, not "Code
+repositories").
+
+<span class="gu">## User needs</span>
+
+Why do we do this? Who is it helping?
+
+<span class="gu">## Principles</span>
+
+What broad approaches do we follow when we do this?
+
+<span class="gu">## Tools</span>
+
+What specific software (commercial or open source) do we use to help us do this?
+</code></pre></div></div>
+
+<p>The service manual has some useful information on
+<a href="https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs">learning about and writing user needs</a>.</p>
 
           </main>
 

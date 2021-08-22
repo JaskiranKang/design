@@ -39,14 +39,13 @@ which covers service and interaction design more broadly.
 
 - [Design critiques](crits/crits)
 
-<!--
-## Principles
+## Hot tos
 
-{% assign principle_groups = site.pages
-  | where: "principle", true %}
+{% assign howtos_groups = site.pages
+  | where: "howtos", true %}
 
-{% for principle in principle_groups %}
-- [{{ principle.title }}]({{ principle.url | relative_url }})
-{% endfor %}-->
+{% for howtos in howtos_groups %}
+- [{{ howtos.title }}]({{ howtos.url | relative_url }})
+{% endfor %}
 
 
