@@ -31,7 +31,7 @@ You will need the latest version that at the time of this being written is 2.2.2
 
 ##  Install locally
 
-Once all the above have downloaded or are already on your machine simply run the following commands:
+Once all the above have downloaded or are already on your machine simply run the following commands in the same folder where your project exists:
 
 ```
 bundle install
