@@ -1,4 +1,4 @@
-(function($, Modules) {
+(function ($, Modules) {
   'use strict';
 
   Modules.TableOfContents = function () {
@@ -62,7 +62,7 @@
 
     function openNavigation() {
       $html.addClass('toc-open');
-      
+
       toggleBackgroundVisiblity(false);
       updateAriaAttributes();
 
@@ -92,12 +92,14 @@
 
       $toc.attr('aria-hidden', tocIsVisible ? 'false' : 'true');
     }
-
-    function preventingScrolling(callback) {
-      return function (event) {
-        event.preventDefault();
-        callback();
-      }
-    }
+    //add smooth scrolling when clicking any toc link
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   };
 })(jQuery, window.GOVUK.Modules);

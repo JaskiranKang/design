@@ -1086,7 +1086,7 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
   };
 })(jQuery, window.GOVUK.Modules);
 
-(function($, Modules) {
+(function ($, Modules) {
   'use strict';
 
   Modules.TableOfContents = function () {
@@ -1150,7 +1150,7 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
 
     function openNavigation() {
       $html.addClass('toc-open');
-      
+
       toggleBackgroundVisiblity(false);
       updateAriaAttributes();
 
@@ -1180,16 +1180,17 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
 
       $toc.attr('aria-hidden', tocIsVisible ? 'false' : 'true');
     }
-
-    function preventingScrolling(callback) {
-      return function (event) {
-        event.preventDefault();
-        callback();
-      }
-    }
+    //add smooth scrolling when clicking any toc link
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   };
 })(jQuery, window.GOVUK.Modules);
-
 
 // Keep Dark mode inactive for now! //
 // let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
