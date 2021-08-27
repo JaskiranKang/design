@@ -263,6 +263,9 @@ a { -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 a:focus { background-color: #ffbf47; outline: 3px solid #ffbf47; }
 
+/* Leave Dark mode inactive for now! 
+@import "mode-switcher";
+*/
 html, body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "nta", Arial, sans-serif; font-weight: 400; text-transform: none; font-size: 16px; line-height: 1.25; }
 @media (min-width: 768px) { html, body { font-size: 19px; line-height: 1.3157894737; } }
 

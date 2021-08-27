@@ -28,9 +28,11 @@ $desktop-breakpoint: 992px !default;
 @import "modules/skip-link";
 @import "modules/technical-documentation";
 @import "modules/toc";
-
 @import "accessibility";
 
+/* Leave Dark mode inactive for now! 
+@import "mode-switcher";
+*/
 html,
 body {
   margin: 0;
