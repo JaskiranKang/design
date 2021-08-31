@@ -36,6 +36,10 @@
     margin: 0 ($gutter + 2px) $gutter;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   // Headings
   h1 {
     @include bold-48;

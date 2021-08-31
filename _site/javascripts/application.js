@@ -1180,75 +1180,23 @@ padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){va
 
       $toc.attr('aria-hidden', tocIsVisible ? 'false' : 'true');
     }
-    //add smooth scrolling when clicking any toc link
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
+   
   };
 })(jQuery, window.GOVUK.Modules);
 
-// Keep Dark mode inactive for now! //
-// let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
-let theme = sessionStorage.getItem('theme');
-
-if (systemInitiatedDark.matches) {
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else {
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+ //add smooth scrolling when clicking any toc link
+  
+function smoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 }
 
-function prefersColorTest(systemInitiatedDark) {
-  if (systemInitiatedDark.matches) {
-  	document.documentElement.setAttribute('data-theme', 'dark');		
-   	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-   	sessionStorage.setItem('theme', '');
-  } else {
-  	document.documentElement.setAttribute('data-theme', 'light');
-    document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-    sessionStorage.setItem('theme', '');
-  }
-}
-systemInitiatedDark.addListener(prefersColorTest);
-
-
-function modeSwitcher() {
-	let theme = sessionStorage.getItem('theme');
-	if (theme === "dark") {
-		document.documentElement.setAttribute('data-theme', 'light');
-		sessionStorage.setItem('theme', 'light');
-		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-	}	else if (theme === "light") {
-		document.documentElement.setAttribute('data-theme', 'dark');
-		sessionStorage.setItem('theme', 'dark');
-		document.getElementById("theme-toggle").innerHTML = "Light Mode";
-	} else if (systemInitiatedDark.matches) {	
-		document.documentElement.setAttribute('data-theme', 'light');
-		sessionStorage.setItem('theme', 'light');
-		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-	} else {
-		document.documentElement.setAttribute('data-theme', 'dark');
-		sessionStorage.setItem('theme', 'dark');
-		document.getElementById("theme-toggle").innerHTML = "Light Mode";
-	}
-}
-
-if (theme === "dark") {
-	document.documentElement.setAttribute('data-theme', 'dark');
-	sessionStorage.setItem('theme', 'dark');
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else if (theme === "light") {
-	document.documentElement.setAttribute('data-theme', 'light');
-	sessionStorage.setItem('theme', 'light');
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-}
-
-
- //
 
 $(document).ready(function() {
   GOVUK.modules.start();

@@ -92,14 +92,19 @@
 
       $toc.attr('aria-hidden', tocIsVisible ? 'false' : 'true');
     }
-    //add smooth scrolling when clicking any toc link
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
+   
   };
 })(jQuery, window.GOVUK.Modules);
+
+ //add smooth scrolling when clicking any toc link
+  
+function smoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+}

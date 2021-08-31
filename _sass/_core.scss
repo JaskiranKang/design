@@ -30,10 +30,10 @@ $desktop-breakpoint: 992px !default;
 @import "modules/toc";
 @import "accessibility";
 
-/* Leave Dark mode inactive for now! 
-@import "mode-switcher";
-*/
-html,
+html {
+scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
