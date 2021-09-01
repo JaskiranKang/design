@@ -71,7 +71,7 @@
 .flexbox .app-pane__header, .flexboxtweener .app-pane__header { display: flex; flex-direction: column; flex: 1 0 auto; }
 .flexbox .app-pane__header > *, .flexboxtweener .app-pane__header > * { flex: 1 0 auto; }
 .flexbox .app-pane__body, .flexboxtweener .app-pane__body { display: flex; flex: 1 1 100%; min-height: 0; position: relative; }
-.flexbox .app-pane__body > *, .flexboxtweener .app-pane__body > * { overflow-x: scroll; -webkit-overflow-scrolling: touch; -ms-overflow-style: none; }
+.flexbox .app-pane__body > *, .flexboxtweener .app-pane__body > * { overflow-x: scroll; -webkit-overflow-scrolling: smooth; -ms-overflow-style: none; }
 .flexbox .app-pane__toc, .flexboxtweener .app-pane__toc { flex: 0 0 auto; width: 330px; border-right: 1px solid #bfc1c3; }
 .flexbox .app-pane__content, .flexboxtweener .app-pane__content { flex: 1 1 auto; }
 
@@ -132,7 +132,7 @@
 .header__title .phase-banner { margin-left: 5px; }
 
 .header__navigation { font-family: "nta", Arial, sans-serif; font-weight: 700; text-transform: none; font-size: 16px; line-height: 1.25; font-size: 16px; line-height: 1.25; clear: both; padding-top: 10px; display: block; clear: none; padding-top: 2px; border-top: none; float: right; }
-.header__navigation a:link, .header__navigation a:visited { color: #fff; text-decoration: none; padding: 8px 0; display: inline-block; }
+.header__navigation a:link, .header__navigation a:visited { color: #f8f8f8; text-decoration: none; padding: 8px 0; display: inline-block; }
 .header__navigation .active a:link, .header__navigation .active a:visited { color: #1d8feb; }
 .header__navigation a:focus, .header__navigation .active a:focus { color: #0b0c0c; }
 .header__navigation a:hover, .header__navigation a:active { text-decoration: underline; }
@@ -229,4 +229,4 @@ a:hover { color: #2b8cc4; }
 
 a:active { color: #2b8cc4; }
 
-.header { background: #020024; background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); padding-top: 10px; padding-bottom: 10px; font-weight: bold; }
+.header { background: #020024; background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); padding-top: 10px; padding-bottom: 10px; font-weight: bold; color: dimgray; }

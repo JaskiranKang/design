@@ -203,4 +203,4 @@ a:hover { color: #2b8cc4; }
 
 a:active { color: #2b8cc4; }
 
-.header { background: #020024; background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); padding-top: 10px; padding-bottom: 10px; font-weight: bold; }
+.header { background: #020024; background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); padding-top: 10px; padding-bottom: 10px; font-weight: bold; color: dimgray; }

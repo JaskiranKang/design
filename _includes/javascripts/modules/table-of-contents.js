@@ -22,9 +22,9 @@
       updateAriaAttributes();
 
       // Need delegated handler for show link as sticky polyfill recreates element
-      $openLink.on('click.toc', preventingScrolling(openNavigation));
-      $closeLink.on('click.toc', preventingScrolling(closeNavigation));
-      $tocList.on('click.toc', 'a', closeNavigation);
+      $openLink.on('click.toc', scrollIntoView(openNavigation ,behavior, 'smooth'));         
+      $closeLink.on('click.toc', scrollIntoView(closeNavigation ,behavior, 'smooth'));          
+      $tocList.on('click.toc', 'a', closeNavigation ,behavior, 'smooth');
 
       // Allow aria hidden to be updated when resizing from mobile to desktop or
       // vice versa
