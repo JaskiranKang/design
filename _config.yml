@@ -2,56 +2,43 @@ title: DfE Design
 
 permalink: pretty
 
-header_links:
-  GitHub: https://github.com/DFE-Digital/Design
-
 footer_links:
-  Accessibility: https://dfe-digital.github.io/Design/accessibility
+  Github: https://github.com/DFE-Digital/design/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "design"
     values:
       design: true
-  -
-    scope:
+  - scope:
       path: "what"
     values:
       what: true
-  -
-    scope:
+  - scope:
       path: "community"
     values:
       community: true
-  -
-    scope:
+  - scope:
       path: "standards"
     values:
       standards: true
-  -
-    scope:
+  - scope:
       path: "resources"
     values:
       resources: true
-  -
-    scope:
+  - scope:
       path: "publisher"
     values:
       publisher: true
-  -
-    scope:
+  - scope:
       path: "accessibility"
     values:
       accessibility: true
-  -
-    scope:
+  - scope:
       path: "crits"
     values:
       crits: true
-  -
-    scope:
+  - scope:
       path: "howtos"
     values:
       howtos: true
-  
