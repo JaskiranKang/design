@@ -5,7 +5,13 @@ expires: 2020-12-01
 
 # DfE design standards
 
-The Department for Environment, Food & Rural Affairs (DfE) is the UK government department responsible for safeguarding our natural environment, supporting our world-leading food and farming industry and sustaining a thriving rural economy. 
+The Department for Education is responsible for children’s services and education, including early years, schools, higher and further education policy, apprenticeships and wider skills in England. 
+
+DfE's transformationals aims inform how we deliver.
+-   Put children and learners first
+-   Deliver joined up results
+-   Empower yourself and others
+-   Be data, evidence and expertise driven
 
 DfE services are designed to meet user needs and to protect the environment.
 
